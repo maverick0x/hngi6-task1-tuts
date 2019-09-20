@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".DashboardActivity">
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="top|center"
+		android:orientation="vertical"
+		android:paddingBottom="32dp">
+		
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingTop="32dp"
+			android:text="Dashboard"
+			android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="32dp"
+			android:layout_marginTop="48dp"
+			android:layout_marginRight="32dp"
+			android:background="@color/colorPrimary"
+			android:elevation="12dp"
+			android:orientation="vertical"
+			android:padding="16dp"
+			tools:targetApi="lollipop">
+			
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:text="User Details"
+				android:textAppearance="@style/TextAppearance.AppCompat.Large"
+				android:textColor="#FFFFFF" />
+			
+			<TextView
+				android:id="@+id/dbd_tv_name"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingTop="16dp"
+				android:text="Name"
+				android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+				android:textColor="#FFFFFF" />
+			
+			<TextView
+				android:id="@+id/dbd_tv_email"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingTop="8dp"
+				android:text="Email"
+				android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+				android:textColor="#FFFFFF" />
+			
+			<TextView
+				android:id="@+id/dbd_tv_mobile"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingTop="8dp"
+				android:text="Mobile"
+				android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+				android:textColor="#FFFFFF" />
+		</LinearLayout>
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="32dp"
+			android:background="@color/colorPrimaryDark"
+			android:elevation="12dp"
+			android:orientation="vertical"
+			android:padding="16dp"
+			tools:targetApi="lollipop">
+			
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:text="Brief Info"
+				android:textAppearance="@style/TextAppearance.AppCompat.Large"
+				android:textColor="#FFFFFF" />
+			
+			<TextView
+				android:id="@+id/dbd_tv_brief_info"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:inputType="textMultiLine"
+				android:paddingTop="8dp"
+				android:text="Text"
+				android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+				android:textColor="#FFFFFF" />
+		</LinearLayout>
+		
+		<Button
+			android:id="@+id/dbd_btn_logout"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="end"
+			android:layout_marginLeft="0dp"
+			android:layout_marginTop="32dp"
+			android:layout_marginRight="32dp"
+			android:background="@color/colorAccent"
+			android:text="Log out"
+			android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+			android:textColor="#FFFFFF" />
+	</LinearLayout>
+</ScrollView>
